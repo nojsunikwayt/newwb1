@@ -1,0 +1,21 @@
+/*info block for all skins*/
+div#info_100 {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+	z-index: 1;
+	}	
+	#info_line {
+		width: auto;
+		height: 20px;
+		display: inline-block;
+		padding-left: 20px;
+		font-size: 12px;
+		line-height: 20px;
+		vertical-align: middle;
+		text-align: center;
+		margin: 0px;
+		padding: 0px 5px;
+		font-family: arial;
+		}
+/*end info block for all skins*/

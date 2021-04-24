@@ -1,0 +1,555 @@
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+keyframes scroll {
+    0% {
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    100% {
+        -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+        transform: translate(-100%, 0)
+    }
+}
+
+.marquee {
+    background: transparent none repeat scroll 0 0 !important;
+    border: medium none !important;
+    display: block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 50s infinite linear;
+    /* Здесь регулировать скорость движения (во всех трех строках) */
+    /* Здесь регулировать скорость движения (во всех трех строках) */
+    animation: scroll 50s infinite linear;
+}
+
+
+/* Здесь регулировать скорость движения (во всех трех строках) */
+
+p.marquee {
+    padding: 0;
+}
+
+
+/*Customization input file in feedback form*/
+
+.attach_title {
+    margin-top: 5px;
+}
+
+.attach_cont {
+    font-family: arial;
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#attach1 {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+    bottom: 0;
+}
+
+#attach_label {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 23%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    cursor: pointer;
+}
+
+#attach1:focus+label,
+#attach1+label:hover {
+    outline: 1px solid #000;
+}
+
+#attach1:active+label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+#filename_field {
+    margin: 0;
+    width: 100%;
+    font-family: arial;
+    overflow: hidden;
+    padding-right: 1%;
+    font-size: 10px;
+    line-height: 25px;
+    padding-left: 27%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 25px;
+    border: 1px solid #cbcbcb;
+    background-color: white;
+}
+
+#filename_field:focus {
+    outline: none;
+}
+
+.feedback .required_fields,
+div.feedback_page_form form label.required_fields{color:inherit;display:block;font-size:12px;margin:15px 0;text-align:center;}
+
+
+/* STYLE FOR FEEDBACK FORM */
+
+#captcha.playSoundButton {
+    background-color: white;
+    background-image: url('../images/captcha_sound_transparent.png');
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position: right top;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+#captcha.playSoundButton.playing {
+    //background-image: url('../images/negative-pauseover.png');
+    background-image: url('../images/captcha_sound_transparent.png');
+}
+
+
+/* for /js/jquery.colorbox-min.js */
+
+#colorbox,
+#cboxWrapper {
+    overflow: visible !important;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#cboxOverlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../images/cbox.png');
+    width: 100%;
+    height: 100%;
+    z-index: 1010;
+    cursor: default !important;
+}
+
+#colorbox {
+    background-color: white;
+    z-index: 1020;
+}
+
+#cboxCurrent {
+    color: white;
+    margin-right: 10px;
+    font-size: 17px;
+    display: block;
+}
+
+#cboxTitle {
+    width: 75%;
+    padding-right: 24%;
+    padding-left: 1%;
+    background-color: white;
+    color: #3E3E3E;
+    position: absolute;
+    top: 100%;
+    margin-top: -22px;
+}
+
+#cboxLoadedContent {
+    overflow: hidden !important;
+}
+
+#cboxNext {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    background-image: url('../images/cboxArrows.png');
+    background-position: -1px -40px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 37px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#cboxPrevious {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    background-image: url('../images/cboxArrows.png');
+    background-position: -1px 0px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 37px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#cboxClose {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    background-image: url('../images/cboxArrows.png');
+    background-position: -1px -76px;
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#cboxCurrent {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    color: #898989;
+    font-size: 13px;
+}
+
+#cboxLoadedContent {
+    background-color: white;
+}
+
+#cboxMiddleLeft,
+#cboxContent,
+#cboxPhoto {
+    border-bottom: 28px solid white;
+}
+
+
+/*------- FEEDBACK FORM on page -------*/
+
+div.feedback_page_form {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    margin: 20px 0 20px 0;
+}
+
+div.feedback_page_form form label[for="email"],
+div.feedback_page_form form input#email,
+div.feedback_page_form form label[for="name"],
+div.feedback_page_form form input#name,
+div.feedback_page_form form label.textarea,
+div.feedback_page_form form textarea,
+div.feedback_page_form form label.code,
+div.feedback_page_form form img#captcha,
+div.feedback_page_form form label[for="code"],
+div.feedback_page_form form input#code,
+div.feedback_page_form form input#agree,
+div.feedback_page_form form label[for="agree"],
+div.feedback_page_form form div.attach_title,
+div.feedback_page_form form div.attach_cont,
+div.feedback_page_form form input.send {
+    display: block;
+    position: relative;
+    float: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    text-indent: 0;
+}
+
+div.feedback_page_form form label[for="agree"] a,
+div.feedback_page_form form div.attach_title {
+    color: inherit;
+}
+
+div.feedback_page_form>h2 {
+    display: none;
+}
+
+div.feedback_page_form form label {
+    display: block;
+}
+
+div.feedback_page_form form input,
+div.feedback_page_form form textarea {
+    font-size: 16px;
+    border: 1px solid #d9d9d9;
+    height: 28px;
+    max-width: 50%;
+    min-width: 380px;
+    margin: 0;
+}
+
+div.feedback_page_form form textarea {
+    display: block;
+    position: relative;
+    float: none;
+    min-height: 120px;
+}
+
+div.feedback_page_form form label[for="email"],
+div.feedback_page_form form label[for="name"],
+div.feedback_page_form form label.textarea,
+div.feedback_page_form form label[for="code"],
+div.feedback_page_form form label.code,
+div.feedback_page_form form label[for="agree"],
+div.feedback_page_form form input#agree {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    color: inherit;
+}
+
+div.feedback_page_form form label.code {
+    width: 100%;
+}
+
+div.feedback_page_form form input#code,
+div.feedback_page_form form img#captcha {
+    margin: 10px 0 0 0;
+}
+
+div.feedback_page_form form input#agree {
+    min-width: 50px;
+    width: 50px;
+}
+
+div.feedback_page_form form input#agree,
+div.feedback_page_form form label[for="agree"] {
+    display: inline-block;
+}
+
+div.feedback_page_form form div.attach_title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.feedback_page_form form div.attach_cont {
+    margin-bottom: 20px;
+}
+
+div.feedback_page_form form input.send {
+    background-color: white;
+    color: black;
+    background-image: none;
+    margin: 20px 0 10px 0;
+    border: 1px solid grey;
+}
+
+div.feedback_page_form form input.send:hover {
+    border: 1px solid black;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+div.feedback_page_form #captcha.playSoundButton {
+    background-color: white;
+    background-image: url('../images/captcha_sound_transparent.png');
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-position: right top;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+div.feedback_page_form #code {
+    height: 28px;
+}
+
+
+/* Portfolio stylesheets */
+
+.user_portfolio {
+    display: block;
+    margin-top: 30px;
+}
+
+.user_portfolio>a:hover {
+    text-decoration: none;
+}
+
+.user_portfolio .portfolio_title {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.user_portfolio .portfolio_title p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.portfolio_header .portfolio_menu_container {
+    display: block;
+    position: relative;
+    float: right;
+    max-width: 210px;
+    min-height: 110px;
+}
+
+.portfolio_header .portfolio_menu_item a {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    min-width: 100px;
+    max-width: 200px;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+    color: inherit;
+}
+
+.portfolio_header .photo,
+.portfolio_header .user_info {
+    display: inline-block;
+}
+
+.portfolio_header .photo {
+    float: left;
+}
+
+div.portfolio_header div.photo img {
+    max-width: 170px !important;
+    height: auto;
+}
+
+.portfolio_header .head::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.portfolio_header .photo {
+    width: 27%;
+}
+
+.user_portfolio p.user_name {
+    font-size: 20px;
+}
+
+.portfolio_header .user_info {
+    margin-left: 10px;
+    width: 70%;
+}
+
+.portfolio_header .user_info p {
+    color: inherit;
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+}
+
+.user_portfolio span.span_bold {
+    font-weight: bold;
+}
+
+.user_portfolio table.diploma,
+.user_portfolio table.employment {
+    display: block;
+    position: relative;
+}
+
+.user_portfolio h1.p_chapter {
+    margin: 10px 0 0 0;
+}
+
+.user_portfolio hr.p_line {
+    margin: 0 0 15px 0;
+}
+
+
+/* Users portfolio list page */
+
+div.user_p_list {
+    margin: 20px 0 10px 0;
+}
+
+div.user_p_list div.u_p_photo {
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+}
+
+div.user_p_list div.u_p_content {
+    display: inline-block;
+    width: 75%;
+}
+
+div.u_p_content a {
+    color: inherit;
+}
+
+
+/* News' gallery styles */
+
+.news_gallery_album {
+    text-align: center;
+}
+
+
+/*Afisha - all events*/
+
+._afisha_table_content {
+    margin-right: 20px;
+    border-collapse: collapse;
+    border-color: #33518D;
+    width: 90%;
+}
+
+._afisha_table_content ._left_col_content {
+    border-bottom: 1px dotted #33518D;
+    padding: 5px;
+    vertical-align: top;
+    min-width: 200px;
+    max-width: 300px;
+    width: 20%;
+}
+
+._afisha_table_content ._right_col_content {
+    border-bottom: 1px dotted #33518D;
+    padding: 5px;
+    vertical-align: top;
+}
+
+._afisha_table_content ._right_col_content img {
+    max-width: 200px !important;
+    max-height: 300px !important;
+}
